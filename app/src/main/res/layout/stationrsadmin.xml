@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cardv1"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="182dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/stationnameadmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Name"
+                android:textColor="#020202"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/typestationadmin"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="type"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/modifystation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:backgroundTint="#BDE038"
+                    android:fontFamily="@font/lato"
+                    android:text="Modify"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:icon="@drawable/ic_baseline_edit_24"
+                    app:iconPadding="0dp"
+                    app:iconSize="20sp"
+                    app:iconTint="@color/colorPrimary" />
+
+                <Button
+                    android:id="@+id/deletestation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:backgroundTint="#BDE038"
+                    android:fontFamily="@font/lato"
+                    android:text="Delete"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:icon="@drawable/ic_baseline_delete_24"
+                    app:iconPadding="0dp"
+                    app:iconSize="18sp"
+                    app:iconTint="@color/colorPrimary" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageviewuseradmin"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
